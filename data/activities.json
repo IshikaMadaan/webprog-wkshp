@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Scuba Diving in Bali",
+    "description": "Guided scuba diving session with equipment and instructor.",
+    "price": 120,
+    "location": "Bali, Indonesia",
+    "duration": "4 hours",
+    "category": "Adventure",
+    "imageURL": "https://example.com/images/scuba.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Jungle Safari",
+    "description": "Half-day wildlife safari in an open jeep.",
+    "price": 60,
+    "location": "Jim Corbett National Park, India",
+    "duration": "6 hours",
+    "category": "Nature",
+    "imageURL": "https://example.com/images/safari.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Skydiving Experience",
+    "description": "Tandem skydiving jump with safety briefing.",
+    "price": 250,
+    "location": "Dubai, UAE",
+    "duration": "3 hours",
+    "category": "Adventure",
+    "imageURL": "https://example.com/images/skydiving.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Local Food Tour",
+    "description": "Street food tasting tour with a local guide.",
+    "price": 40,
+    "location": "Bangkok, Thailand",
+    "duration": "3 hours",
+    "category": "Food",
+    "imageURL": "https://example.com/images/foodtour.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Art Museum Visit",
+    "description": "Guided tour of modern and classical art exhibits.",
+    "price": 15,
+    "location": "Paris, France",
+    "duration": "2 hours",
+    "category": "Culture",
+    "imageURL": "https://example.com/images/museum.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Cooking Class",
+    "description": "Learn to make authentic Italian pasta from scratch.",
+    "price": 55,
+    "location": "Rome, Italy",
+    "duration": "3 hours",
+    "category": "Food",
+    "imageURL": "https://example.com/images/cooking.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Sunset Boat Ride",
+    "description": "Private boat ride with sunset views.",
+    "price": 80,
+    "location": "Santorini, Greece",
+    "duration": "2 hours",
+    "category": "Romantic",
+    "imageURL": "https://example.com/images/boat.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Mountain Trek",
+    "description": "Guided trek to a scenic mountain peak.",
+    "price": 30,
+    "location": "Himachal Pradesh, India",
+    "duration": "5 hours",
+    "category": "Adventure",
+    "imageURL": "https://example.com/images/trek.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Beach Yoga Session",
+    "description": "Morning yoga session on the beach with instructor.",
+    "price": 20,
+    "location": "Goa, India",
+    "duration": "1.5 hours",
+    "category": "Wellness",
+    "imageURL": "https://example.com/images/yoga.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Historic Walking Tour",
+    "description": "Learn about the city’s history with a local guide.",
+    "price": 25,
+    "location": "Istanbul, Turkey",
+    "duration": "2 hours",
+    "category": "Culture",
+    "imageURL": "https://example.com/images/history.jpg"
+  }
+]
