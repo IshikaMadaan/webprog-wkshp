@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useLayoutEffect } from 'react';
 import { View, Text, StyleSheet, FlatList, Image, TouchableOpacity, Platform, ToastAndroid } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 import Slider from '@react-native-community/slider';
@@ -8,9 +8,19 @@ import { useItinerary } from '../context/ItineraryContext';
 const CATEGORIES = ['All', 'Adventure', 'Culture', 'Food', 'Wellness', 'Romantic', 'Nature'];
 const ACCENT = '#FF3B30';
 
-export default function ActivityCatalogScreen() {
+export default function ActivityCatalogScreen({ navigation }) {
   const { state, dispatch } = useItinerary();
   const [selectedCategory, setSelectedCategory] = useState('All');
+
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      headerRight: () => (
+        <TouchableOpacity onPress={() => navigation.navigate('Cart')} style={{ paddingHorizontal: 12, paddingVertical: 6 }}>
+          <Text style={{ color: '#fff', fontWeight: '800' }}>Cart ({state.selectedActivities.length})</Text>
+        </TouchableOpacity>
+      ),
+    });
+  }, [navigation, state.selectedActivities.length]);
 
   const maxPrice = useMemo(() => {
     return activitiesData.reduce((max, a) => Math.max(max, a.price || 0), 0);
@@ -30,8 +40,6 @@ export default function ActivityCatalogScreen() {
     if (Platform.OS === 'android') {
       ToastAndroid.show('Added to itinerary', ToastAndroid.SHORT);
     } else {
-      // iOS fallback
-      // Using dynamic import to avoid circular import of Alert in some bundlers
       import('react-native').then(({ Alert }) => {
         Alert.alert('Added to itinerary');
       });
